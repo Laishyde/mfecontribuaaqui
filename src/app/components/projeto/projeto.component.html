@@ -37,7 +37,7 @@
         </div>
 
     </div>
-    <button class="zh-mt-32" id="openModal">Doar oara projeto</button>
+    <button class="zh-mt-32" (click)="abrirModal()">Doar para projeto</button>
     </div>
-   <script src="modal.js"></script>
+   <app-modal *ngIf="exibirModal" (closeModal)="fecharModal()"></app-modal>
 </div>

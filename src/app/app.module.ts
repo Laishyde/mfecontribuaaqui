@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './modules/landing-page/views/landing-page.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { ProjetoComponent } from './components/projeto/projeto.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjetoComponent } from './components/projeto/projeto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
