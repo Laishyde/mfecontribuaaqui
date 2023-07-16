@@ -1,0 +1,96 @@
+
+.page {
+    display: flex;
+    margin-top: 42px;
+}
+
+.back {
+    background-color: rgb(245, 229, 229);
+    width: 400px;
+    height: 500px;
+    margin-left: 80px;
+}
+
+.container-descricao {
+    margin-left: 32px;
+}
+
+.funciona {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+   
+}
+
+.organizacao{
+    display: flex;
+    align-items: center;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    p{
+        margin-top: 12px;
+    }
+}
+
+.about {
+    font-size: 16px;
+    padding: 20px;
+}
+
+.funciona p {
+    width: 300px;
+    font-size: 13px;
+    padding: 10px 20px 20px 20px;
+}
+
+.paragrafo {
+    width: 350px;
+    border-right: 1px solid #000;
+}
+
+
+
+h3 {
+    width: 600px;
+    font-size: 28px;
+    margin: 20px 20px 10px 20px;
+}
+
+.test {
+    border-top: 1px solid #000;
+    display: flex;
+
+    span {
+        margin: 20px;
+    }
+}
+
+.arrecadado {
+    padding: 20px;
+    background-color: #dbee30;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.meta {
+    display: flex;
+    margin-top: 20px;
+    width: 150px;
+}
+.value {
+    font-weight: 700;
+    font-size: 18px!important;
+    margin: 0;
+    padding: 0;
+}
+
+.porcentagem3 {
+    width: 220px;
+    height: 12px;
+    background-color: #E9E9E9;
+    border-radius: 4px;
+    margin: 20px;
+
+}

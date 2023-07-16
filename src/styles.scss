@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'app/shared/utils/color.scss';
+@import 'app/shared/utils/helper.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #0A0A0A;
+    color: #fff;
+    border-radius: 8px;
+}
