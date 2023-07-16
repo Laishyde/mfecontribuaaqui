@@ -9,6 +9,8 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
 import { ProjetoComponent } from './components/projeto/projeto.component';
 import { SharedModule } from './shared/shared.module';
 import { ObrigadoComponent } from './components/obrigado/obrigado.component';
+import { MeuProjetoComponent } from './components/meu-projeto/meu-projeto.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ObrigadoComponent } from './components/obrigado/obrigado.component';
     LandingPageComponent,
     ProjetosComponent,
     ProjetoComponent,
-    ObrigadoComponent
+    ObrigadoComponent,
+    MeuProjetoComponent,
+    
   ],
   imports: [
     BrowserModule,

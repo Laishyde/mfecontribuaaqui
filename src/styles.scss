@@ -32,3 +32,32 @@ button {
         color: #fff;
     }
 }
+
+.app-contribuaaqui {
+    display: flex;
+    margin: 40px 0 0 40px;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+
+.title {
+    margin-bottom: 32px;
+}
+
+.sub-title {
+    font-size: 26px;
+}
+
+.container-valor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-valor {
+    p {
+        font-size: 12px;
+    }
+    span {
+        font-size: 28px;
+    }
+}

@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalComponent } from './components/modal/modal.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 
 
 
 @NgModule({
   declarations: [
-    ModalComponent
+    ModalComponent,
+    ProgressBarComponent
   ],
   imports: [
     CommonModule,    
   ],
   exports:[
-    ModalComponent
+    ModalComponent,
+    ProgressBarComponent
 
   ]
 })
