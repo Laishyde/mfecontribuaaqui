@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class MeuProjetoComponent {
 
+  
+  exibirModal: boolean = false
+  abrirModal(){
+    this.exibirModal = true;
+  }
+
+  closeModal(){
+    this.exibirModal = false;
+  }
 }

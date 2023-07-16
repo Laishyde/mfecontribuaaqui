@@ -17,6 +17,9 @@ export class ProjetoComponent {
 
   fecharModal() {
     this.exibirModal = false;
+  }
+
+  doar(){
     this.router.navigate(['/obrigado']);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, ContentChild, EventEmitter, Output, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -6,6 +6,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent {
+  @ContentChild('modalHeader') modalHeaderTemplate!: TemplateRef<any>;
+  @ContentChild('modalBody') modalBodyTemplate!: TemplateRef<any>;
 
   @Output() closeModal = new EventEmitter<void>();
 

@@ -40,5 +40,17 @@
     <button class="zh-mt-32" (click)="abrirModal()">Doar para projeto</button>
     
     </div>
-   <app-modal *ngIf="exibirModal" (closeModal)="fecharModal()"></app-modal>
+   <app-modal *ngIf="exibirModal" (closeModal)="fecharModal()">
+    <ng-template #modalHeader>
+        <h2 class="zh-mb-32">Digite o valor a ser doado:</h2>
+      </ng-template>
+      <ng-template #modalBody>
+        <input type="text" class="value-input">
+        <div class="zh-d-flex zh-mt-12">
+            <p class="zh-fs-12 zh-me-12">adiciona 2% para caridade?</p><input type="checkbox">
+        </div>
+        
+        <button class="btn" (click)="doar()">Doar agora</button>
+      </ng-template>
+   </app-modal>
 </div>

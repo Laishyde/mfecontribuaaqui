@@ -1,7 +1,7 @@
 <div class="app-contribuaaqui">
     <div class="container-projeto">
         <h1 class="title">Meu Projeto</h1>
-        <img class="zh-mb-32" src="../../../assets/myprojetos.png">
+        <img class="zh-mb-32" src="../../../assets/myprojetos.png" (click)="abrirModal()">
         <p class="sub-title zh-mb-24">Construa um abrigo para gatos conosco!</p>
         <app-progress-bar [percentage]="50"></app-progress-bar>
         <div class="container-valor zh-mt-24">
@@ -42,3 +42,36 @@
         </div>
     </div>
 </div>
+
+<app-modal *ngIf="exibirModal" (closeModal)="closeModal()">
+    <ng-template #modalHeader>
+        <h2 class="zh-mb-32">Começo seu projecto:</h2>
+      </ng-template>
+      <ng-template #modalBody class="zh-d-flex">
+        <div class="zh-d-flex">
+        <div class="container-modal modal-s">
+            <p class="label">Nome do seu projeto</p>
+            <input type="text" class="value-input zh-mt-12">
+            <p class="label zh-mt-12">Adicione sua meta</p>
+            <input type="text" class="value-input zh-fs-28 zh-mt-12">
+            
+            <p class="label zh-mt-12">Adicione sua linha do tempo</p>
+            <input type="text" class="value-input zh-mt-12">
+        </div>
+
+        <div class="container-modal zh-ms-16 bord-me">
+            <p class="label">Sobre seu projeto</p>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+               
+            </textarea>
+            <div class="container-upload">
+                <p class="label zh-mt-12">Add imagem</p>
+                <i class="fa-sharp fa-solid fa-upload bord"></i>
+            </div>
+        </div> 
+    </div>
+    <button class="btn">Doar agora</button>
+      </ng-template>
+    
+
+</app-modal>
