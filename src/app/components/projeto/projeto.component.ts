@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projeto',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ProjetoComponent {
 
+  constructor(private router: Router) {}
+
   exibirModal: boolean = false
   abrirModal(){
     this.exibirModal = true;
@@ -14,5 +17,6 @@ export class ProjetoComponent {
 
   fecharModal() {
     this.exibirModal = false;
+    this.router.navigate(['/obrigado']);
   }
 }

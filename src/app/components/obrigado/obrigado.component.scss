@@ -1,0 +1,15 @@
+.obrigado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img {
+        margin-top: 40px;
+        width: 50%;
+    }
+    h1 {
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+}
+

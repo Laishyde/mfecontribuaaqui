@@ -14,4 +14,21 @@ button {
     background-color: #0A0A0A;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        color: #0A0A0A;
+    }
+}
+
+.btn-segundary{
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #0A0A0A;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: #0A0A0A;
+        color: #fff;
+    }
 }
